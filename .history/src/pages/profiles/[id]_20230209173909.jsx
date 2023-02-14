@@ -197,9 +197,8 @@ const Page = ({ id }) => {
       )}
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 w-[70%] items-center justify-center mt-16">
-        {posts.map((post, index) => (
+        {posts.map((post) => (
           <LazyLoadImage
-            key={index}
             onClick={() => {
               setActivePhoto({
                 img: post.data().image,
